@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+      
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      html,body{
+        height: 100%;
+        width: 100%;
+      }
+      nav{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+        height: 50px;
+      }
+      .logo{
+        margin-right: 20px;
+        display: flex;
+      }
+      .logo h1{
+        color: blue;
+      }
+       .content a{
+        text-decoration: none;
+        font-size: 18px;
+        color: black;
+        padding-right: 30px;
+
+       }
+       a:hover{
+        color: blue;
+       }
+       .button button{
+        font-size: 18px;
+        padding: 5px;
+        background-color: blue;
+        color: white;
+        border-radius: 10px;
+        border: none;
+        height: 40px;
+        width: 150px;
+       }
+       .background{
+         height: 600px;
+         width: 100%;
+         background-image: url('/TEST/Image/background.jpg');
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+       }
+      .background h1{
+        padding-top: 200px;
+        font-size: 40px;
+        font-weight: bold;
+        color: white;
+      }
+      .background p{
+        margin-top: 20px;
+        font-size: 18px;
+       
+      }
+      .background .buttons{
+        margin-top: 20px;
+      }
+     
+      .book-now , .learn-more{
+        padding: 10px;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        margin: 5px;
+      }
+      .book-now{
+        
+        color: blue;
+      }
+      .learn-more{
+        background-color: white;
+        color: blue;
+      }
+      .sc-page{
+        width: 100%;
+        height: 500px;
+      }
+      .sc-page , .text{
+        margin-top: 50px;
+        text-align: center;
+        width: 800px;
+        margin-left: 150px;
+      }
+      .sc-page , .text h1{
+        color: blue;
+       
+      }
+      .sc-page , .text p{
+        margin-top: 18px;
+        color:gray;
+        line-height: 28px;
+      }
+      .card-contain{
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        margin: 20px;
+        margin-top: 60px;
+        margin-left: 270px;
+       
+      }
+      .card{
+        width: 350px;
+        height: 200px;
+        background-color: lightblue;
+        border-radius: 10px;
+      }
+      .card h3{
+        margin-top: 25px;
+        color: blue;
+      }
+
+      .card p{
+        margin-top: 10px;
+      }
+      .service{
+        margin-left: 600px;
+        color: blue;
+      }
+      .containerd {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            background-color: #f5f5f5;
+            padding: 50px;
+        }
+
+        .cardd {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 15px;
+            width: 280px;
+        }
+
+        .cardd img {
+            width: 100%;
+            height: 180px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .cardd h3 {
+            margin-top: 15px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .cardd p {
+            margin-top: 8px;
+            color: #666;
+            font-size: 0.95em;
+        }
+
+@media (max-width: 768px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content a {
+        padding: 5px;
+    }
+    .button button {
+        width: 100%;
+    }
+    .background h1 {
+        font-size: 30px;
+    }
+    .background p {
+        font-size: 16px;
+    }
+    .card-contain {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 80%;
+    }
+    .containerd {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cardd {
+        width: 80%;
+    }
+}
+
+
+
+     
+    </style>
+</head>
+<body>
+    
+  <header>
+    
+    <nav>
+        <div class="logo">
+             <h1>Ghumakkar</h1>
+        </div>
+
+        <div class="content">
+            <a href="">Home</a>
+            <a href="">About us</a>
+            <a href="">Services</a>
+            <a href="">Blog</a>
+            <a href="">Contact</a>
+
+        </div>
+
+        <div class="button">
+            <button>Login / Signup</button>
+        </div>
+    </nav>
+
+    <div class="background">
+      
+       <div class="under">
+       <h1>Ghumo with Ghumakkar</h1>
+       <p>Discover new places and adventures with us.</p>
+    </div>
+       <div class="buttons">
+         <button class="book-now">Book Now</button>
+         <button class="learn-more">Learn More</button>
+       </div>
+
+    </div>
+
+  </header>
+
+  <div class="sc-page">
+
+     <div class="text">
+        <h1>About Us</h1>
+        <p>At Ghumakkar, we believe that traveling is more than just visiting places; it's about creating lifelong memories and enriching experiences. Our team of travel experts is dedicated to curating the best travel plans that cater to your interests, ensuring you get the most out of every trip.</p>
+     </div>
+
+
+     <div class="card-contain">
+         <div class="card">
+             <h3>Personalized Itineraries</h3>
+             <p>Tailor-made travel plans designed just for you.</p>
+         </div>
+
+         <div class="card">
+            <h3>Expert Guides</h3>
+            <p>Experience destinations with knowledgeable local guides.</p>
+        </div>
+
+        <div class="card">
+            <h3>Best Deals</h3>
+            <p>Affordable travel packages with premium services.</p>
+        </div>
+
+    </div>
+  </div>
+ 
+   <h1 class="service">Our Services</h1>
+
+  <div class="containerd">
+    <div class="cardd">
+        <img src="/TEST/Image/card1.jpg" alt="">
+        <h3>TOURS</h3>
+        <p>Experience unforgettable tours with us.</p>
+    </div>
+    <div class="cardd">
+        <img src="/TEST/Image/card2.webp" alt="">
+        <h3>HIKING</h3>
+        <p>Explore the best hiking trails around the world.</p>
+    </div>
+    <div class="cardd">
+        <img src="/TEST/Image/card3.jpeg" alt="">
+        <h3>TRAVEL</h3>
+        <p>Let us plan your next perfect getaway.</p>
+    </div>
+</div>
+
+ 
+
+</body>
+</html>
